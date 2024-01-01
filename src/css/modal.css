@@ -1,0 +1,125 @@
+body::-webkit-scrollbar {
+  width: 8px; /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #217af4; /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /*스크롤바 뒷 배경 색상*/
+}
+.previewModal-player {
+  position: relative;
+  padding: 2vw 10vw;
+  margin-top: 15rem;
+}
+.previewModal-player .logo_bx {
+  position: absolute;
+  top: -1.5vw;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  height: min(11rem, 20vw);
+  text-align: center;
+}
+.previewModal-player .logo_bx img {
+  height: 100%;
+  object-fit: contain;
+}
+.previewModal-info_bx {
+  position: relative;
+  background: linear-gradient(135deg, #363636, #1f1f1f);
+}
+.previewModal-info {
+  display: flex;
+  padding: 70px;
+}
+.previewModal-info_bx .rank_bx {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #5c5c5c, #333);
+}
+.previewModal-info_bx .rank_bx .rank {
+  font-size: 2rem;
+}
+.previewModal-info_bx .thum_bx {
+  overflow: hidden;
+  width: 300px;
+  min-width: 300px;
+  border-radius: 5px;
+}
+.previewModal-info_bx .txt_bx {
+  padding-left: 2vw;
+}
+.previewModal-info_bx .txt_list > li:not(.desc) {
+  display: flex;
+}
+.previewModal-info_bx .txt_list > li ~ li {
+  margin-top: 8px;
+}
+.previewModal-info_bx .txt_bx .vd_list {
+  display: flex;
+}
+.previewModal-info_bx .txt_bx .vd_list > li {
+  font-family: "Pretendard";
+}
+.previewModal-info_bx .txt_bx .vd_list > li ~ li {
+  position: relative;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+}
+.previewModal-info_bx .txt_bx .vd_list > li ~ li::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: inline-block;
+  content: "";
+  width: 2px;
+  height: 15px;
+  background-color: #777;
+}
+.previewModal-info_bx .txt_bx .tit {
+  padding-right: 1vw;
+  color: #777;
+  font-weight: bold;
+}
+.previewModal-info_bx .txt_bx em {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: "Pretendard";
+}
+.previewModal-info_bx .desc em {
+  color: #d5d5d5;
+  font-size: 1.4rem;
+}
+.previewModal-info_bx .txt_list .desc .tit {
+  display: block;
+  margin: 30px 0 10px;
+}
+.previewModal-info_bx .txt_bx .moreBtn {
+  display: flex;
+  margin-top: 1vw;
+  font-size: 1.5rem;
+}
+.previewModal-info_bx .txt_bx .moreBtn .svg-inline--fa{
+    margin-left: 5px;
+}
+
+.previewModal-close {
+    position: fixed;
+    top: 3vw;
+    right: 5vw;
+}
+.previewModal-close .svg-inline--fa{
+    font-size: 2.5vw;
+}
